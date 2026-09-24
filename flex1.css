@@ -1,0 +1,83 @@
+header{
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Középre helyeziiö */
+
+.page {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 5px;
+}
+
+.side-menu{
+    flex: 0 1 150px;
+}
+
+.content{
+    flex: 1;
+}
+
+/* .side-menu és .content a .page gyerekeleme. A .side-menu megvan adva mien nagy legyen. A .content kitölti a maradék helyet */
+
+@media screen and (max-width: 620px) {
+    .page{
+        flex-direction: column;
+    }
+
+    .side-menu{
+        flex: 1;
+    }
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.footer-column{
+    flex: 1 1 200px;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-links{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.chart{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    gap: 20px ;
+}
+
+.column{
+    flex: 0 0 70px;
+}
+
+.html-column{
+    height: 65%;
+}
+
+.css-column{
+    height: 80%;
+}
+
+.js-column{
+    height: 55%;
+}
+
+.react-column{
+    height: 35%;
+}
